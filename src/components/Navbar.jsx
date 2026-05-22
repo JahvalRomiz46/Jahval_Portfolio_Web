@@ -30,7 +30,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold text-primary tracking-tight">
+        <a href="#home" className="text-xl font-bold text-primary tracking-tight">
           {personalInfo.name}<span className="text-secondary">.</span>
         </a>
 
