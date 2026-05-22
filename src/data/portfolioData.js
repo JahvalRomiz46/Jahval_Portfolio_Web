@@ -10,7 +10,7 @@ export const personalInfo = {
   ],
   bio: "Detail-oriented Data Analyst with a passion for transforming complex datasets into actionable business insights. Proficient in SQL, Excel, Tableau, and Power BI, with hands-on experience in the end-to-end data analysis process, including data cleaning, transformation, and analysis. I focus on delivering clear, impactful dashboards and reports that enable informed decision-making.",
   resumeLink: "/CV_Jahval_Romiz_Septrada.pdf",
-  photo: "/Jahval PP.jpg"
+  photo: "./Jahval PP.jpg"
 };
 
 export const skills = [
