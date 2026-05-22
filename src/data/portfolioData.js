@@ -32,7 +32,6 @@ export const projects = [
     description: "Interactive Tableau dashboard analyzing $2M+ in sales data across 4 regions, identifying key trends that led to a 15% increase in Q3 revenue.",
     tags: ["Python", "Seaborn", "Matplotlib"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    link: "#", // Replace with your live project link
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/ecommerce_data_analysis_python/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-2",
     rowSpan: "md:row-span-2",
@@ -43,7 +42,6 @@ export const projects = [
     description: "Analyzed customer data to identify churn indicators. Built a Power BI dashboard to monitor high-risk accounts.",
     tags: ["SQL", "Python", "Tableau"],
     image: "Project Thumbnails/Bike Store.png",
-    link: "#", // Replace with your live project link
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/bike_store_sales_analysis/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-1",
     rowSpan: "md:row-span-1",
@@ -54,7 +52,6 @@ export const projects = [
     description: "Developed an Excel-based model integrating historical sales data to forecast inventory needs, reducing stockouts by 22%.",
     tags: ["SQL", "Data Cleaning", "Tableau"],
     image: "Project Thumbnails/World Layoffs.png",
-    link: "#", // Replace with your live project link
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/world_layoffs_sql_project/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-1",
     rowSpan: "md:row-span-1",
@@ -65,7 +62,6 @@ export const projects = [
     description: "A/B testing analysis for a recent digital marketing campaign to optimize ad spend.",
     tags: ["Tableau"],
     image: "Project Thumbnails/British Airways.png",
-    link: "#", // Replace with your live project link
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/british_airways_review_analysis/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-2",
     rowSpan: "md:row-span-1",
@@ -76,7 +72,6 @@ export const projects = [
     description: "A/B testing analysis for a recent digital marketing campaign to optimize ad spend.",
     tags: ["Machine Learning", "Python"],
     image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    link: "#", // Replace with your live project link
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/breast_cancer_subtype_classification/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-2",
     rowSpan: "md:row-span-1",
