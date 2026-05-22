@@ -143,7 +143,7 @@ export const experiences = [
     company: "OPPO Indonesia Manufacturing",
     type: "Internship",
     location: "Kota Tangerang, Banten, Indonesia",
-    period: "2025-12 - Present",
+    period: "2025/12 - Present",
     description: [
       "Automated data preparation including collecting and cleaning raw HR datasets using Excel and Power Query, reducing manual processing time by 78%.",
       "Developed dashboards using Power BI to monitor key operational HR metrics, improving reporting speed and enabling better visibility for decision-making.",
@@ -157,7 +157,7 @@ export const experiences = [
     company: "Badan Riset dan Inovasi Nasional (BRIN)",
     type: "Internship",
     location: "Kab. Bogor, Jawa Barat, Indonesia",
-    period: "2024-08 - 2024-10",
+    period: "2024/08 - 2024/10",
     description: [
       "Collaborated closely with internal teams and BRIN researchers to gather requirements, iterate on features, and ensure that deliverables aligned with research workflow needs.",
       "Developed a full-stack Plant Research Management System (Laravel), optimizing backend data storage, and authoring comprehensive technical documentation (user manual)."
@@ -169,7 +169,7 @@ export const experiences = [
     company: "Universitas Islam Negeri Jakarta",
     type: "Part-time",
     location: "Ciputat Timur, Banten, Indonesia",
-    period: "2024-04 - 2024-08",
+    period: "2024/04 - 2024/08",
     description: [
       "Digitized and structured 750+ confidential HR documents into a centralized, access-controlled system, improving data accessibility and retrieval efficiency.",
       "Designed and implemented a standardized file organization system in Google Drive, ensuring data accuracy, consistency, and secure handling during the digital transformation process."
@@ -181,7 +181,7 @@ export const experiences = [
     company: "PT Sukses Satu Sejahtera",
     type: "Internship",
     location: "Cilegon, Banten, Indonesia",
-    period: "2024-01 - 2024-02",
+    period: "2024/01 - 2024/02",
     description: [
       "Collaborated with internal teams to gather requirements, ensuring website features aligned with company branding.",
       "Developed a company profile website using HTML, CSS, and JavaScript to enhance company's digital presence, while also streamlining internal project documentation workflows."
@@ -195,7 +195,7 @@ export const education = [
     degree: "Bachelor's in Computer Science",
     school: "Universitas Islam Negeri Syarif Hidayatullah Jakarta",
     location: "Indonesia",
-    period: "07/2021 - 10/2025",
+    period: "2021/07 - 2025/10",
     gpa: "3.78/4.00 (Cum Laude)",
     thesis: "Performance Evaluation of Random Forest and SVM Using RFE-LASSO for Breast Cancer Subtype Classification"
   }
