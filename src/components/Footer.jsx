@@ -49,12 +49,10 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-800 text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
-          
+        <div className="flex justify-center items-center pt-8 border-t border-slate-800 text-sm text-slate-500">
           <button 
             onClick={scrollToTop}
-            className="flex items-center gap-2 mt-4 md:mt-0 hover:text-white transition-colors group"
+            className="flex items-center gap-2 hover:text-white transition-colors group cursor-pointer"
           >
             <span>Back to top</span>
             <span className="bg-slate-800 p-1 rounded group-hover:bg-slate-700">

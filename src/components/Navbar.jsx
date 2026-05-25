@@ -3,10 +3,10 @@ import { Menu, X } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const navLinks = [
-  { name: 'About', href: '#about' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Certifications', href: '#certifications' },
+  { name: 'About', id: 'about' },
+  { name: 'Experience', id: 'experience' },
+  { name: 'Projects', id: 'projects' },
+  { name: 'Certifications', id: 'certifications' },
 ];
 
 const Navbar = () => {
@@ -20,6 +20,23 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollToSection = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      // Calculate offset for fixed navbar
+      const navbarHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+    setMobileMenuOpen(false);
+  };
 
   return (
     <nav 
@@ -39,12 +56,12 @@ const Navbar = () => {
           <ul className="flex space-x-6">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a 
-                  href={link.href} 
-                  className="text-muted hover:text-secondary-dark transition-colors text-sm font-medium"
+                <button 
+                  onClick={(e) => scrollToSection(e, link.id)}
+                  className="text-muted hover:text-secondary-dark transition-colors text-sm font-medium cursor-pointer"
                 >
                   {link.name}
-                </a>
+                </button>
               </li>
             ))}
           </ul>
@@ -58,7 +75,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-primary"
+          className="md:hidden text-primary cursor-pointer"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -69,18 +86,17 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-border py-4 px-6 flex flex-col space-y-4">
           {navLinks.map((link) => (
-            <a 
+            <button 
               key={link.name}
-              href={link.href} 
-              className="text-primary font-medium py-2 border-b border-slate-100"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => scrollToSection(e, link.id)}
+              className="text-primary font-medium py-2 border-b border-slate-100 text-left cursor-pointer"
             >
               {link.name}
-            </a>
+            </button>
           ))}
           <a 
             href={personalInfo.resumeLink}
-            className="bg-secondary text-white text-center px-5 py-3 rounded-lg font-medium mt-2"
+            className="bg-secondary text-white text-center px-5 py-3 rounded-lg font-medium mt-2 cursor-pointer"
             onClick={() => setMobileMenuOpen(false)}
           >
             Download Resume

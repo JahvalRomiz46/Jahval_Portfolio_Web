@@ -52,7 +52,7 @@ const Certifications = () => {
                     className="cert-card relative rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-zoom-in border border-slate-100 aspect-[4/3] bg-slate-50"
                   >
                     <img 
-                      src={cert.image} 
+                      src={cert.thumbnail || cert.image} 
                       alt={cert.name}
                       className="w-full h-full object-cover transform-gpu will-change-transform transition-transform duration-500 group-hover:scale-105"
                     />

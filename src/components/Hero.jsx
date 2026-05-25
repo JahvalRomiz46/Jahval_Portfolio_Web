@@ -66,12 +66,16 @@ const Hero = () => {
         
         <div className="flex flex-col lg:flex-row lg:items-center gap-6">
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <a 
-              href="#projects"
-              className="bg-primary hover:bg-slate-700 text-white px-8 py-4 rounded-xl text-center font-medium transition-colors shadow-lg shadow-slate-200"
+            <button 
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById('projects');
+                if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth' });
+              }}
+              className="bg-primary hover:bg-slate-700 text-white px-8 py-4 rounded-xl text-center font-medium transition-colors shadow-lg shadow-slate-200 cursor-pointer"
             >
               View My Work
-            </a>
+            </button>
             <a 
               href={personalInfo.resumeLink}
               download="CV_Jahval_Romiz_Septrada.pdf"
@@ -127,15 +131,19 @@ const Hero = () => {
       `}</style>
       
       {/* Scroll Down Indicator */}
-      <a 
-        href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 z-10"
+      <button 
+        onClick={(e) => {
+          e.preventDefault();
+          const el = document.getElementById('about');
+          if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth' });
+        }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 z-10 cursor-pointer bg-transparent border-none"
         aria-label="Scroll down to About section"
       >
         <ChevronDown size={28} className="text-secondary animate-arrow-1 -mb-4" />
         <ChevronDown size={28} className="text-secondary animate-arrow-2 -mb-4" />
         <ChevronDown size={28} className="text-secondary animate-arrow-3" />
-      </a>
+      </button>
     </section>
   );
 };

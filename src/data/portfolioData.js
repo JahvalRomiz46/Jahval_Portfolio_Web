@@ -31,7 +31,8 @@ export const projects = [
     title: "E-Commerce Sales Analysis",
     description: "Interactive Tableau dashboard analyzing $2M+ in sales data across 4 regions, identifying key trends that led to a 15% increase in Q3 revenue.",
     tags: ["Python", "Seaborn", "Matplotlib"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60",
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/ecommerce_data_analysis_python/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-2",
     rowSpan: "md:row-span-2",
@@ -42,6 +43,7 @@ export const projects = [
     description: "Analyzed customer data to identify churn indicators. Built a Power BI dashboard to monitor high-risk accounts.",
     tags: ["SQL", "Python", "Tableau"],
     image: "Project Thumbnails/Bike Store.png",
+    thumbnail: "Project Thumbnails/Bike Store-thumb.webp",
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/bike_store_sales_analysis/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-1",
     rowSpan: "md:row-span-1",
@@ -52,6 +54,7 @@ export const projects = [
     description: "Developed an Excel-based model integrating historical sales data to forecast inventory needs, reducing stockouts by 22%.",
     tags: ["SQL", "Data Cleaning", "Tableau"],
     image: "Project Thumbnails/World Layoffs.png",
+    thumbnail: "Project Thumbnails/World Layoffs-thumb.webp",
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/world_layoffs_sql_project/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-1",
     rowSpan: "md:row-span-1",
@@ -62,6 +65,7 @@ export const projects = [
     description: "A/B testing analysis for a recent digital marketing campaign to optimize ad spend.",
     tags: ["Tableau"],
     image: "Project Thumbnails/British Airways.png",
+    thumbnail: "Project Thumbnails/British Airways-thumb.webp",
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/british_airways_review_analysis/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-2",
     rowSpan: "md:row-span-1",
@@ -71,7 +75,8 @@ export const projects = [
     title: "Breast Cancer Subtype Classification",
     description: "A/B testing analysis for a recent digital marketing campaign to optimize ad spend.",
     tags: ["Machine Learning", "Python"],
-    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    thumbnail: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60",
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/breast_cancer_subtype_classification/main/README.md", // Replace with RAW readme link
     colSpan: "md:col-span-2",
     rowSpan: "md:row-span-1",
@@ -84,56 +89,63 @@ export const certifications = [
     name: "Data Analyst Intensive Bootcamp Certificate by DSAREA",
     issuer: "DSAREA x JOBAREA",
     date: "2025",
-    image: "Certificates/DSAREA_Certificate.png"
+    image: "Certificates/DSAREA_Certificate.png",
+    thumbnail: "Certificates/DSAREA_Certificate-thumb.webp"
   },
   {
     id: 2,
     name: "DataCamp Course Completion: 'EDA in Power BI'",
     issuer: "DataCamp",
     date: "2026",
-    image: "Certificates/DataCamp_EDA_Power_BI.png"
+    image: "Certificates/DataCamp_EDA_Power_BI.png",
+    thumbnail: "Certificates/DataCamp_EDA_Power_BI-thumb.webp"
   },
   {
     id: 3,
     name: "DataCamp Course Completion: 'Data Visualization in Power BI'",
     issuer: "DataCamp",
     date: "2026",
-    image: "Certificates/DataCamp_Visualization_Power_BI.png"
+    image: "Certificates/DataCamp_Visualization_Power_BI.png",
+    thumbnail: "Certificates/DataCamp_Visualization_Power_BI-thumb.webp"
   },
   {
     id: 4,
     name: "Belajar Analisis Data dengan Python",
     issuer: "Dicoding",
     date: "2024",
-    image: "Certificates/Dicoding_Analisis_Data_Python.png"
+    image: "Certificates/Dicoding_Analisis_Data_Python.png",
+    thumbnail: "Certificates/Dicoding_Analisis_Data_Python-thumb.webp"
   },
   {
     id: 5,
     name: "Memulai Pemrograman dengan Python",
     issuer: "Dicoding",
     date: "2024",
-    image: "Certificates/Dicoding_Mulai_Python.png"
+    image: "Certificates/Dicoding_Mulai_Python.png",
+    thumbnail: "Certificates/Dicoding_Mulai_Python-thumb.webp"
   },
   {
     id: 6,
     name: "Belajar Dasar Data Science",
     issuer: "Dicoding",
     date: "2024",
-    image: "Certificates/Dicoding_Belajar_DS.png"
+    image: "Certificates/Dicoding_Belajar_DS.png",
+    thumbnail: "Certificates/Dicoding_Belajar_DS-thumb.webp"
   },
   {
     id: 7,
     name: "Belajar Dasar Structured Query Language (SQL)",
     issuer: "Dicoding",
     date: "2024",
-    image: "Certificates/Dicoding_Belajar_SQL.png"
+    image: "Certificates/Dicoding_Belajar_SQL.png",
+    thumbnail: "Certificates/Dicoding_Belajar_SQL-thumb.webp"
   }
 ];
 
 export const socialLinks = {
   linkedin: "https://linkedin.com/in/jahval-romiz-septrada21",
   github: "https://github.com/JahvalRomiz46",
-  email: "https://mail.google.com/mail/?view=cm&fs=1&to=jahvalromizseptrada@gmail.com"
+  email: "mailto:jahvalromizseptrada@gmail.com"
 };
 
 export const experiences = [

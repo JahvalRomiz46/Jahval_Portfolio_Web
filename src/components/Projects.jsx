@@ -57,7 +57,7 @@ const Projects = () => {
                   {/* Image Background */}
                   <div className="absolute inset-0">
                     <img 
-                      src={project.image} 
+                      src={project.thumbnail || project.image} 
                       alt={project.title}
                       className="w-full h-full object-cover transform-gpu will-change-transform transition-transform duration-700 group-hover:scale-105"
                     />
