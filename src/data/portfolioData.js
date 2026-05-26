@@ -41,7 +41,7 @@ export const projects = [
     id: 2,
     title: "Bike Store Sales Analysis",
     description: "Analyzed customer data to identify churn indicators. Built a Power BI dashboard to monitor high-risk accounts.",
-    tags: ["SQL", "Python", "Tableau"],
+    tags: ["SQL", "Excel", "Tableau"],
     image: "Project Thumbnails/Bike Store.png",
     thumbnail: "Project Thumbnails/Bike Store-thumb.webp",
     githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/bike_store_sales_analysis/main/README.md", // Replace with RAW readme link
@@ -72,6 +72,17 @@ export const projects = [
   },
   {
     id: 5,
+    title: "World Population Data ETL",
+    description: "A/B testing analysis for a recent digital marketing campaign to optimize ad spend.",
+    tags: ["Data Engineering", "Python"],
+    image: "https://images.unsplash.com/photo-1617240016072-d92174e44171?q=80&w=1470&auto=format&fit=cropw=1200&q=80",
+    thumbnail: "https://images.unsplash.com/photo-1617240016072-d92174e44171?q=80&w=1470&auto=format&fit=crop&w=600&q=60",
+    githubReadmeUrl: "https://raw.githubusercontent.com/JahvalRomiz46/world_population_data_ETL_project/main/README.md", // Replace with RAW readme link
+    colSpan: "md:col-span-2",
+    rowSpan: "md:row-span-1",
+  },
+  {
+    id: 6,
     title: "Breast Cancer Subtype Classification",
     description: "A/B testing analysis for a recent digital marketing campaign to optimize ad spend.",
     tags: ["Machine Learning", "Python"],

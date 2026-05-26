@@ -191,7 +191,15 @@ const ProjectModal = ({ project, onClose }) => {
                         const isRelative = src && !src.startsWith('http') && !src.startsWith('data:');
                         const finalSrc = isRelative ? baseUrl + src.replace(/^\.\//, '') : src;
                         return <img src={finalSrc} className="rounded-lg shadow-sm border border-slate-200 my-6 max-w-full h-auto" {...props} />
-                      }
+                      },
+                      table: ({node, ...props}) => <div className="overflow-x-auto my-6"><table className="w-full border-collapse border border-slate-200 text-sm text-left" {...props} /></div>,
+                      thead: ({node, ...props}) => <thead className="bg-slate-50 text-slate-700" {...props} />,
+                      tbody: ({node, ...props}) => <tbody className="bg-white divide-y divide-slate-200" {...props} />,
+                      tr: ({node, ...props}) => <tr className="hover:bg-slate-50/50 transition-colors" {...props} />,
+                      th: ({node, ...props}) => <th className="border border-slate-200 px-4 py-3 font-semibold whitespace-nowrap" {...props} />,
+                      td: ({node, ...props}) => <td className="border border-slate-200 px-4 py-3 text-slate-600" {...props} />,
+                      hr: ({node, ...props}) => <hr className="border-t border-slate-200 my-8" {...props} />,
+                      strong: ({node, ...props}) => <strong className="font-semibold text-slate-900" {...props} />
                     }}
                   >
                     {readmeContent}
